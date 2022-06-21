@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <style>
+        .col{
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col align-self-center">Welcome {{session['user_first_name']}}</div>
+        <form action="/destroy_session" method="POST">
+            <button type="submit" class="btn btn-primary button-login">Logout</button>
+        </form>
+    </div>
+</body>
+</html>
